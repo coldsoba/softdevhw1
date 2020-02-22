@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+      <style>
+      .topnav {
+        background-color: #f2f2f2;
+        overflow: hidden;
+      }
+
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #333;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Add an active class to highlight the current page */
+      .topnav a.active {
+        background-color: #4CAF50;
+        color: white;
+      }
+
+      /* Hide the link that should open and close the topnav on small screens */
+      .topnav .icon {
+        display: none;
+      }
+      </style>
+
+      </head>
+      <body>
+
+        <div class="topnav" id="myTopnav">
+          <a href="mypage_bootstrap.html">Home</a>
+
+          <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i> -->
+          </a>
+        </div>
+
+
+        <div class="container pt-3">
+
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Interest Name:</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Interest name">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Text About Interest</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </form>
+
+          <form action="/action_page.php">
+            <p>Default file:</p>
+            <input type="file" id="myFile" name="filename2">
+          </form>
+          <br>
+          <form>
+            <div class="form-group">
+              <label for="sel1">Select # tweets to display:</label>
+              <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </form>
+
+          <br>
+          <div>
+             <label class = "checkbox-inline">
+                <label for="inlineCheckbox1">On a scale from 1-5, how interested interested in this are you?</label><br>
+                <input type = "checkbox" id = "inlineCheckbox1" value = "option1">  1
+                <input type = "checkbox" id = "inlineCheckbox2" value = "option2">  2
+                <input type = "checkbox" id = "inlineCheckbox2" value = "option2">  3
+                <input type = "checkbox" id = "inlineCheckbox2" value = "option2">  4
+                <input type = "checkbox" id = "inlineCheckbox2" value = "option2">  5
+             </label>
+          <br>
+
+
+          <p> Log in to submit: <p/>
+
+          <label for="usern">Email address:</label>
+          <form class="form-inline">
+            <label class="sr-only" for="usern">Username:</label>
+            <input type="text" class="form-control" id="usern" placeholder="Username">
+          </form>
+
+          <br>
+
+          <label for="pass">Password:</label>
+          <form class="form-inline">
+            <label class="sr-only" for="pass">Password:</label>
+            <input type="password" class="form-control" id="pass" placeholder="Password">
+          </form>
+
+          <br>
+          <form action="home.html">
+            <input type="submit" value="Submit" class="btn btn-primary">
+          </form>
+          </div>
+
+        </div>
+
+      </body>
+    </html>
